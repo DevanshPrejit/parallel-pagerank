@@ -1,0 +1,6 @@
+# Four vertices; vertex 3 is dangling. Edges are directed.
+4 4
+0 1
+1 2
+2 0
+2 3
