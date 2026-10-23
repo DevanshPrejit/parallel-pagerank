@@ -1,0 +1,3 @@
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU; input_load_and_csr_ms=3294.06; fp64; damping=0.85; tolerance=1e-10; cap=1000; warmup=1/config; repeats=5
+Date: 2026-10-23; CUDA 13.4.92; sm_89; FP64; -O2 --fmad=false -Xcompiler=/Zc:preprocessor. Both thread-per-vertex and warp-per-vertex mappings are benchmarked together. Compute and solver timing boundaries are unchanged from the original benchmark.
+Correctness: both mappings at 128/256/512 threads per block passed synthetic, Berkeley-Stanford and Google tests. NVIDIA Compute Sanitizer memcheck on synthetic suite: zero errors. Includes 70000-edge incoming list, tail warps and grid-stride test.

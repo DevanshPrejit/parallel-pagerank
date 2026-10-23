@@ -1,0 +1,28 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "logical_cpus": 24,
+  "physical_cores": 16,
+  "ram_gib": 15.710746765136719,
+  "timing_policy": "Retain saved runs; add CUDA benchmarks only for wiki-Vote and web-Stanford. Five repetitions after warm-up. Input/CSR loading excluded from solver timings.",
+  "memory_policy": "Separate single-run measurements per dataset/configuration. Poll every 5ms; host OS peak working set observed while alive, a lower bound if final peak is missed. Includes input parsing, CSR, solver and rank output to null. NVML device-wide sampled peak minus pre-run baseline; may include other GPU activity and miss short peaks. No memory measurement timings are used for speedups.",
+  "baseline_policy": "OpenMP speedups use GCC sequential in the same CSV. CUDA speedups use NVCC/MSVC sequential in the same CSV. Cross-compiler absolute timings are descriptive, not controlled CPU/GPU speedup estimates.",
+  "cpu": "{\n    \"Name\":  \"Intel(R) Core(TM) i7-14650HX\",\n    \"NumberOfCores\":  16,\n    \"NumberOfLogicalProcessors\":  24\n}",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 592.82, 8188 MiB, 8.9",
+  "gcc": "g++ (Rev6, Built by MSYS2 project) 16.1.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "cuda": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Sun_Sep_01_02:23:07_Pacific_Standard_Time_2026\nCuda compilation tools, release 13.4, V13.4.92\nBuild cuda_13.4.r13.4/compiler.38855100_0",
+  "source_files_sha256": {
+    "src\\benchmark_cpu.cpp": "63c8c7e97f4c3949e0667b84d7b4555752c920bc4274969e627eca0f7eb0c003",
+    "src\\benchmark_cuda.cu": "77d466b19c3fcfa98e7e6e504a50ed9fbd94fc38e6d192c9e00d08a9f5389831",
+    "src\\cuda.cu": "35ce050d86ec1f315cf43d5d25dd8978196ae7876753330d602f881d8ec7c3db",
+    "src\\graph.cpp": "c32ba1f8d85499194d797bd2e121530a09388acbe6e6192f4b39f322c326b7ea",
+    "src\\openmp.cpp": "79345ea7309da324e0f19658ae188b9ca6875e6b97ad3afc4e1537809acf3536",
+    "src\\pagerank.cpp": "46ed1a1b3bb46dd1e19cd2b0bf216e302316ff0c72d8e9c0310e026438fb3bf3",
+    "src\\pagerank_cuda.cu": "a106857a3e0bf736fb8f782c0e3efb1862f7c50e0d395d2420ee6cfb65e22042",
+    "src\\pagerank_openmp.cpp": "0baee8cef7c46d209e7fe9c2b558a3ec77b4b54040a9c9747ef86610f72c6cb7",
+    "src\\sequential.cpp": "57287fa46f1d3f0cf7d1d777c20225bef40f47e2e31346ed651b76640c865bf1",
+    "include\\graph.hpp": "8b94eb8e7dfc94df629f54ce27ad3b73c42523964af27f44c25c2f8d5bce892d",
+    "include\\pagerank.hpp": "f073adea0dc2d203f7412321c4e890a4fa4a0dc365640b1b2db8b7ffcda3c5b5",
+    "include\\pagerank_cuda.hpp": "a16e2ad249a3ad3f785b6618125a7cd91a7317f419d49fc5247e90de0744aa30",
+    "include\\pagerank_openmp.hpp": "0b70ff06c7a1ef8518688a68c10182aa96fe9e2b39c542f225fccfeea0459aef"
+  }
+}

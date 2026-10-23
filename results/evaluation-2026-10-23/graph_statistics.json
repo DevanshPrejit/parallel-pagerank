@@ -1,0 +1,50 @@
+[
+  {
+    "input": "wiki-Vote.txt",
+    "vertices": 7115,
+    "edges": 103689,
+    "mean_in_degree": 14.573295853829936,
+    "median_in_degree": 0.0,
+    "p99_in_degree": 144,
+    "max_in_degree": 457,
+    "top_one_percent_vertices_edge_fraction": 0.1369769213706372,
+    "vertices_with_in_degree_at_least_1024": 0,
+    "dangling_vertices": 1005
+  },
+  {
+    "input": "web-Stanford.txt",
+    "vertices": 281903,
+    "edges": 2312497,
+    "mean_in_degree": 8.203165627893283,
+    "median_in_degree": 2.0,
+    "p99_in_degree": 59,
+    "max_in_degree": 38606,
+    "top_one_percent_vertices_edge_fraction": 0.5073974150020519,
+    "vertices_with_in_degree_at_least_1024": 173,
+    "dangling_vertices": 172
+  },
+  {
+    "input": "web-Google.txt",
+    "vertices": 875713,
+    "edges": 5105039,
+    "mean_in_degree": 5.829580010802626,
+    "median_in_degree": 1.0,
+    "p99_in_degree": 61,
+    "max_in_degree": 6326,
+    "top_one_percent_vertices_edge_fraction": 0.28637998651920193,
+    "vertices_with_in_degree_at_least_1024": 134,
+    "dangling_vertices": 136259
+  },
+  {
+    "input": "web-BerkStan.txt",
+    "vertices": 685230,
+    "edges": 7600595,
+    "mean_in_degree": 11.092034791237978,
+    "median_in_degree": 2.0,
+    "p99_in_degree": 103,
+    "max_in_degree": 84208,
+    "top_one_percent_vertices_edge_fraction": 0.5468017964383052,
+    "vertices_with_in_degree_at_least_1024": 552,
+    "dangling_vertices": 4744
+  }
+]

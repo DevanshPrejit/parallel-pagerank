@@ -1,0 +1,4 @@
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU; input_load_and_csr_ms=2290.93; fp64; damping=0.85; tolerance=1e-10; cap=1000; warmup=1/config; repeats=5
+Date: 2026-10-23; CUDA toolkit: 13.4.92; driver: 592.82; target: sm_89; flags: -std=c++17 -O2 --fmad=false -Xcompiler=/Zc:preprocessor
+Timing: compute is wall time of iterative loop including scalar convergence download and host check. Solver end-to-end includes CUDA setup, allocations, CSR upload, rank initialization, iterations, rank download and cleanup. File parsing and CSR construction are measured separately. Warm-up excludes cold context startup from reported repeated medians.
+CPU baseline: same sequential source compiled by NVCC/MSVC, separate from Day 2 GCC baseline. GPU validation: small graphs and wiki-Vote/web-Stanford/web-Google at 128/256/512 threads per block. NVIDIA Compute Sanitizer memcheck: zero errors on small graph correctness suite.
