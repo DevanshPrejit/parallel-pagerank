@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-23",
+  "compiler": "MSYS2 UCRT64 GCC 16.1.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic -fopenmp",
+  "logical_processors": 24,
+  "repeats": 5,
+  "damping": 0.85,
+  "tolerance": 1E-10,
+  "max_iterations": 1000,
+  "schedule": "static",
+  "timing": "Complete solver call, including allocation, initialization, team entry and convergence checks; excludes graph loading, warm-up, verification and output",
+  "note": "Initial local measurements; background load and hybrid core placement are uncontrolled. Results do not establish universal speedups."
+}
